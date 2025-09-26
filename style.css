@@ -1,0 +1,96 @@
+:root {
+    --base-color: #f0ffff;
+    --button-color: rgb(139, 175, 252);
+    --text-color: #000000;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: var(--text-color);
+}
+
+body {
+    padding: 1em;
+    background-color: var(--base-color);
+}
+
+nav {
+    margin: 1em auto 3em auto;
+    width: min(1000px, 100%);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    gap: 2em;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: var(--button-color);
+    color: white;
+    padding: 0.25em 0.75em;
+    border-radius: 1em;
+    display: inline-block;
+
+}
+
+nav a:hover {
+    background-color: rgb(83, 105, 154);
+    transform: scale(1.1);
+}
+
+header {
+    margin: 2em auto;
+    height: 90vh;
+    width: min(50em, 100%);
+    background-color: rgb(219, 236, 253);
+
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5em;
+    gap: 3em;
+}
+
+.cta-button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: var(--button-color);
+    padding: 0.75em 1.25em;
+    border-radius: .5em;
+    font-weight: 600;
+    margin-inline: .5em;
+}
+
+.cta-button:hover {
+    transform: scale(1.1);
+}
+
+.userinput {
+    display: inline-block;
+    border-radius: 1em;
+    background-color: aliceblue;
+    padding: 2em;
+    gap: 3em;
+    font-size: 1rem;
+}
