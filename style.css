@@ -51,13 +51,13 @@ nav a {
 }
 
 nav a:hover {
-    background-color: rgb(43, 48, 58);
+    background-color: rgb(14, 71, 71);
     transform: scale(1.1);
 }
 
 header {
     margin: 2em auto;
-    height: 90vh;
+    height: 85vh;
     width: min(30em, 100%);
     background-color: aliceblue;
     border-radius: 1em;
@@ -93,7 +93,7 @@ header {
 
 .cta-button:hover {
     transform: scale(1.1);
-    background-color: rgb(83, 105, 154);
+    background-color: rgb(14, 71, 71);
 }
 
 .userinput {
@@ -129,7 +129,7 @@ button {
 
 button:hover {
     transform: scale(1.1);
-    background-color: rgb(83, 105, 154);
+    background-color: rgb(14, 71, 71);
 }
 
 h1,
@@ -162,4 +162,16 @@ h2 {
         width: 100%;
         max-height: fit-content;
     }
+}
+
+footer a {
+    display: block;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    font-size: large;
+}
+
+footer:hover {
+    text-decoration: underline;
 }
