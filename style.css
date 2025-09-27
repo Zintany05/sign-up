@@ -1,6 +1,6 @@
 :root {
-    --base-color: #f0ffff;
-    --button-color: rgb(139, 175, 252);
+    --base-color: #d0f8f8;
+    --button-color: rgb(31, 120, 140);
     --text-color: #000000;
 
 }
@@ -47,10 +47,11 @@ nav li:first-child {
 nav a {
     display: inline-flex;
     align-items: center;
+    box-shadow: .001em .2em 2em rgb(37, 40, 46);
 }
 
 nav a:hover {
-    background-color: rgb(83, 105, 154);
+    background-color: rgb(43, 48, 58);
     transform: scale(1.1);
 }
 
@@ -58,8 +59,9 @@ header {
     margin: 2em auto;
     height: 90vh;
     width: min(30em, 100%);
-    background-color: var(--base-color);
+    background-color: aliceblue;
     border-radius: 1em;
+    box-shadow: .5em 4px 2em rgb(37, 40, 46);
 
 }
 
@@ -74,6 +76,7 @@ header {
     margin: 0 auto;
     padding: 7em;
     box-sizing: border-box;
+
 
 }
 
@@ -90,11 +93,12 @@ header {
 
 .cta-button:hover {
     transform: scale(1.1);
+    background-color: rgb(83, 105, 154);
 }
 
 .userinput {
     display: inline-block;
-    background-color: var(--base-color);
+    background-color: aliceblue;
     padding: 1em;
     gap: 3em;
     font-size: 1rem;
@@ -105,11 +109,12 @@ input[type="email"],
 input[type="submit"] {
 
     width: 100%;
-    border-radius: 1em;
+    border-radius: .5em;
     padding: 0.25em;
     margin: 1em;
     background-color: aliceblue;
     box-sizing: border-box;
+    border-color: black;
 }
 
 button {
@@ -124,9 +129,37 @@ button {
 
 button:hover {
     transform: scale(1.1);
+    background-color: rgb(83, 105, 154);
 }
 
 h1,
 h2 {
     color: rgb(1, 1, 23);
+}
+
+@media(max-width: 800px) {
+    nav ul {
+        display: none;
+    }
+
+    nav ul:first-child {
+        display: block;
+        align-items: center;
+    }
+
+    header {
+        margin-top: 0;
+    }
+
+    .cta-button {
+        width: 100%;
+        margin-top: 0;
+
+    }
+
+    .flex-container {
+        display: flex;
+        width: 100%;
+        max-height: fit-content;
+    }
 }
